@@ -7,5 +7,5 @@ const word2 = generate()
 console.log(`The ${chalk.greenBright(word1)} is ${chalk.redBright(word2)}.`)
 
 export const sum = (a, b) => {
-    return a + b;
-  };
+  return a + b
+}
