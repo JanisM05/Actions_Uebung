@@ -1,0 +1,24 @@
+{
+  "name": "cowsay2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint .",
+    "format-write": "prettier --write .",
+    "format-check": "prettier --check .",
+    "test": "mocha ./"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "eslint": "^9.16.0",
+    "mocha": "^11.0.1",
+    "prettier": "^3.4.2",
+    "random-words": "^2.0.1"
+  }
+}
