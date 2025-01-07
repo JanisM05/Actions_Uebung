@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  lint-format-test:
+  ci-checks:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -24,15 +24,13 @@ jobs:
         run: npm run lint
 
       - name: Check code formatting
-        run: npm run format:check
-
+        run: npm run format-check
 
   virus-scan:
-    if: 1 == 2
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Run virus scan
+      - name: Scan for viruses
         uses: hugoalh/scan-virus-ghaction@latest
