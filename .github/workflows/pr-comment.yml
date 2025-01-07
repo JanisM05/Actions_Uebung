@@ -1,0 +1,15 @@
+name: PR Comment
+
+on:
+    pull_request:
+      branches:
+        - main
+
+jobs:
+  add-comment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add Pull Request Comment
+        uses: thollander/actions-comment-pull-request@v2
+        with:
+          message: "Vielen Dank für Ihren Pull Request! Wir prüfen die Änderungen."
