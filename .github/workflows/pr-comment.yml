@@ -6,13 +6,13 @@ on:
       - main
 
 jobs:
-    add-comment:
-        runs-on: ubuntu-latest
-        steps:
-          - name: Comment on PR
-            uses: thollander/actions-comment-pull-request@v2
-            with:
-              message: Vielen Dank für Ihren Pull Request! Wir prüfen die Änderungen.
-              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              mode: upsert
-              create_if_not_exists: true
+  add-comment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comment on PR
+        uses: thollander/actions-comment-pull-request@v2
+        with:
+          message: Vielen Dank für Ihren Pull Request! Wir prüfen die Änderungen.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          mode: upsert
+          create_if_not_exists: true
